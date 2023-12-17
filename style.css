@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+:root{
+    --inter: 'inter', sans-serif;
+    --Kaushan: 'Kaushan Script', cursive;
+    --Mont: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-image: url("./Assets/367418010_1468665820536231_2466274955155951413_n.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 1100px;
+    height: 600px;
+    padding-top: 4%;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.todo-app{
+    width: 400px;
+    height: 500px;
+    background: white;
+    margin-left: 35%;
+    padding-left: 10%; 
+    border-radius: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.todo{
+    padding-top: 10%;
+    margin-left: 13%;
+}
+
+#input-box{
+    margin-top: 10px;
+    min-width: 300px;
+    min-height: 50px;
+    margin-left: -75px;
+    border-radius: 50px;
+    padding-left: 13px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: 700;
+    background: #edeef0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+
+.Addbtn{
+    min-width: 80px;
+    min-height: 50px;
+    margin-left: -50px;
+    border-radius: 50px;
+    padding-left: 5px;
+    border-style: none;
+    background: orange;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-top: 30px;
+    left: -48px;
+    color: orange;
+    font-weight: 700;
+}
+
+ul li::before{
+
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("./Assets/square-regular.svg");
+    background-size: cover;
+    background-position: center;
+    top: 28px;
+    left: -8px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    color: orange;
+}
+
+.checked{
+    color: black;
+    text-decoration: line-through;
+    
+}
+
+.checked::before{
+    background-image: url("./Assets/square-check-solid.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 29px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height: 29px;
+    text-align: center; 
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
